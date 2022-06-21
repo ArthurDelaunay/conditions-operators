@@ -61,7 +61,7 @@
 //     break
     
 //     case "April":
-//     case "Mai":
+//     case "May":
 //     case "June":
 //         console.log("Spring")
 //     break
@@ -83,19 +83,40 @@
 // }
 
 // 07 - Rounded but better
-let roundedNumber = -123.24474
-let decimalRoundedNumber = roundedNumber - Math.floor(roundedNumber)
-if (decimalRoundedNumber < 0.5) {
-    console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.floor(roundedNumber)}`)
-}
-else {
-    console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.ceil(roundedNumber)}`)
-}
+// let roundedNumber = -123.24474
+// let decimalRoundedNumber = roundedNumber - Math.floor(roundedNumber)
+// if (decimalRoundedNumber < 0.5) {
+//     console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.floor(roundedNumber)}`)
+// }
+// else {
+//     console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.ceil(roundedNumber)}`)
+// }
 
+// 08 - Rounded but better, Méthode 2
 
+// let roundedNumber = 123.2666
+// let roundedNumberString = roundedNumber.toString()
+// let index = roundedNumberString.indexOf(".") + 1
+// let indexPlusOne = index +1
+// let afterDot = roundedNumberString.substring(index, indexPlusOne)
+// console.log (afterDot)
 
+// if (afterDot < 5) {
+//     console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.floor(roundedNumber)}`)
+// }
+// else {
+//           console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.ceil(roundedNumber)}`)
+// }
 
+// 09 - Rounded but better, Méthode 3
 
-
-
-
+// let roundedNumber = 123.23446
+// let roundedNumberString = roundedNumber.toString()
+// let splitNumber = roundedNumberString.split("")
+// let index = splitNumber.indexOf(".") + 1
+// if (splitNumber[index] < 5) {
+//     console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.floor(roundedNumber)}`)
+// }
+// else {
+//           console.log(`L'arrondie naturel de ${roundedNumber} est  ${Math.ceil(roundedNumber)}`)
+// }
